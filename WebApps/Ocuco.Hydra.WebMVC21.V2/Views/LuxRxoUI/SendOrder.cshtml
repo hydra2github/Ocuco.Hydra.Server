@@ -1,0 +1,283 @@
+﻿@model RxoSendOrderViewModel
+@{
+    ViewBag.Title = "Luxottica RXO SendOrder";
+}
+
+<div class="col-md-10 offset-md-1">
+
+    <form method="post" id="frmValidateFrame">
+
+        <div class="card">
+
+            <div class="card-header" style="background-color: #ffffff;">
+                <h5 class="card-title">Send a Rxo Order to Luxottica </h5>
+            </div>
+
+            <div class="card-body" style="background-color: #ffffff;">
+
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <!--<div asp-validation-summary="All"></div>-->
+                        <div asp-validation-summary="ModelOnly"></div>
+
+
+                        <h5 class="card-title"><i class="fa fa-home"></i> Practice and Frame info</h5>
+
+                        <div class="form-group">
+                            <label asp-for="UserName">UserName:</label>
+                            <input asp-for="UserName" class="form-control" type="text" value="0001026660" id="DOOR_NUMBER" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Password">Password:</label>
+                            <input type="text" asp-for="Password" class="form-control" type="text" value="***" id="DOOR_PASSWORD" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PracticeID">PracticeID:</label>
+                            <input type="text" asp-for="PracticeID" class="form-control" type="text" value="229" id="PRACTICEID" />
+                            <span asp-validation-for="PracticeID" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LocationID">LocationID:</label>
+                            <input type="text" asp-for="LocationID" class="form-control" type="text" value="229" id="LOCATIONID" />
+                            <span asp-validation-for="LocationID" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ChartItemID">ChartItemID:</label>
+                            <input type="text" asp-for="ChartItemID" class="form-control" type="text" value="" id="CHARTITEMID" />
+                            <span asp-validation-for="ChartItemID" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="OrderGroupID">OrderGroupID:</label>
+                            <input type="text" asp-for="OrderGroupID" class="form-control" type="text" value="229-56381" id="ORDERGROUPID" />
+                            <span asp-validation-for="OrderGroupID" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="DisplayID">DisplayID:</label>
+                            <input type="text" asp-for="DisplayID" class="form-control" type="text" value="11040.229" id="DISPLAYID" />
+                            <span asp-validation-for="DisplayID" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="FrameID">FrameID:</label>
+                            <input type="text" asp-for="FrameID" class="form-control" type="text" value="805289270102" id="FRAME_UPC" />
+                            <span asp-validation-for="FrameID" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LensCode">LensCode:</label>
+                            <input type="text" asp-for="LensCode" class="form-control" type="text" value="LSA0000154" id="LENS_UPC" />
+                            <span asp-validation-for="LensCode" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4 offset-md-1" style="background-color:#e9fcff">
+
+                        <h5 class="card-title"><i class="fa fa-eye"></i> Right Eye</h5>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.sphere">sphere:</label>
+                            <input asp-for="RightEye.sphere" class="form-control" type="text" value="-2.75" id="R_SPHERE" />
+                            <span asp-validation-for="RightEye.sphere" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.cylinder">sphere:</label>
+                            <input asp-for="RightEye.cylinder" class="form-control" type="text" value="+1.75" id="R_CYLINDER" />
+                            <span asp-validation-for="RightEye.cylinder" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.axis">sphere:</label>
+                            <input asp-for="RightEye.axis" class="form-control" type="text" value="180" id="R_AXIS" />
+                            <span asp-validation-for="RightEye.axis" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.DI">DI:</label>
+                            <input asp-for="RightEye.DI" class="form-control" type="text" value="24" id="R_DI" />
+                            <span asp-validation-for="RightEye.DI" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.prism1">prism1:</label>
+                            <input asp-for="RightEye.prism1" class="form-control" type="text" value="" id="R_PRISM1" />
+                            <span asp-validation-for="RightEye.prism1" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.base1">base1:</label>
+                            <input asp-for="RightEye.base1" class="form-control" type="text" value="" id="R_BASE1" />
+                            <span asp-validation-for="RightEye.base1" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.prism2">prism2:</label>
+                            <input asp-for="RightEye.prism2" class="form-control" type="text" value="" id="R_PRISM2" />
+                            <span asp-validation-for="RightEye.prism2
+                                  " class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.base2">base2:</label>
+                            <input asp-for="RightEye.base2" class="form-control" type="text" value="" id="R_BASE2" />
+                            <span asp-validation-for="RightEye.base2" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.add">add:</label>
+                            <input asp-for="RightEye.add" class="form-control" type="text" value="" id="R_ADD" />
+                            <span asp-validation-for="RightEye.add" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.MonoHeight">MonoHeight:</label>
+                            <input asp-for="RightEye.MonoHeight" class="form-control" type="text" value="" id="R_MONOHEIGHT" />
+                            <span asp-validation-for="RightEye.MonoHeight" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.ProgHeight">ProgHeight:</label>
+                            <input asp-for="RightEye.ProgHeight" class="form-control" type="text" value="" id="R_PROGHEIGHT" />
+                            <span asp-validation-for="RightEye.ProgHeight" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="RightEye.Lens_Type">Lens_Type:</label>
+                            <input asp-for="RightEye.Lens_Type" class="form-control" type="text" value="1" id="R_LENSTYPE" />
+                            <span asp-validation-for="RightEye.Lens_Type" class="text-danger"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 offset-md-1" style="background-color:#e9fcff">
+                        <h5 class="card-title"><i class="fa fa-eye"></i> Left Eye</h5>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.sphere">sphere:</label>
+                            <input asp-for="LeftEye.sphere" class="form-control" type="text" value="0.25" id="L_SPHERE" />
+                            <span asp-validation-for="LeftEye.sphere" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.cylinder">sphere:</label>
+                            <input asp-for="LeftEye.cylinder" class="form-control" type="text" value="+1.25" id="L_CYLINDER" />
+                            <span asp-validation-for="LeftEye.cylinder" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.axis">sphere:</label>
+                            <input asp-for="LeftEye.axis" class="form-control" type="text" value="135" id="L_AXIS" />
+                            <span asp-validation-for="LeftEye.axis" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.DI">DI:</label>
+                            <input asp-for="LeftEye.DI" class="form-control" type="text" value="24" id="L_DI" />
+                            <span asp-validation-for="LeftEye.DI" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.prism1">prism1:</label>
+                            <input asp-for="LeftEye.prism1" class="form-control" type="text" value="" id="L_PRISM1" />
+                            <span asp-validation-for="LeftEye.prism1" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.base1">base1:</label>
+                            <input asp-for="LeftEye.base1" class="form-control" type="text" value="" id="L_BASE1" />
+                            <span asp-validation-for="LeftEye.base1" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.prism2">prism2:</label>
+                            <input asp-for="LeftEye.prism2" class="form-control" type="text" value="" id="L_PRISM2" />
+                            <span asp-validation-for="LeftEye.prism2
+                                  " class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.base2">base2:</label>
+                            <input asp-for="LeftEye.base2" class="form-control" type="text" value="" id="L_BASE2" />
+                            <span asp-validation-for="LeftEye.base2" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.add">add:</label>
+                            <input asp-for="LeftEye.add" class="form-control" type="text" value="" id="L_ADD" />
+                            <span asp-validation-for="LeftEye.add" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.MonoHeight">MonoHeight:</label>
+                            <input asp-for="LeftEye.MonoHeight" class="form-control" type="text" value="" id="L_MONOHEIGHT" />
+                            <span asp-validation-for="LeftEye.MonoHeight" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.ProgHeight">ProgHeight:</label>
+                            <input asp-for="LeftEye.ProgHeight" class="form-control" type="text" value="" id="L_PROGHEIGHT" />
+                            <span asp-validation-for="LeftEye.ProgHeight" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="LeftEye.Lens_Type">Lens_Type:</label>
+                            <input asp-for="LeftEye.Lens_Type" class="form-control" type="text" value="1" id="L_LENSTYPE" />
+                            <span asp-validation-for="LeftEye.Lens_Type" class="text-danger"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-footer" style="background-color: #ffffff;">
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg" id="ShowBusyIndicator"><i class="fa fa-cogs"></i> Send Order</button>
+                </div>
+
+                @if (ViewBag.UserMessage != null)
+                {
+                    @if (ViewBag.UserMessage.ErrorCode != 0)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            Luxottica RXO CheckOrder WS Error!
+                            <br />
+                            Error Code : @ViewBag.UserMessage.ErrorCode
+                            <br />
+                            Error Description : @ViewBag.UserMessage.ErrorDescription
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-success" role="alert">
+                            Luxottica RXO CheckOrder Ok, Order is validated!
+                            <br />
+                            Error Code : @ViewBag.UserMessage.ErrorCode
+                            <br />
+                            Error Description : @ViewBag.UserMessage.ErrorDescription
+                        </div>
+                    }
+                }
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+
+

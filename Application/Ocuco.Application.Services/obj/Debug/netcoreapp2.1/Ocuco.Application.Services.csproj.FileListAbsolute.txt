@@ -1,0 +1,16 @@
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.Application.Services.deps.json
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.Application.Services.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.Application.Services.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Hydradb.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Hydradb.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\obj\Debug\netcoreapp2.1\Ocuco.Application.Services.csprojAssemblyReference.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\obj\Debug\netcoreapp2.1\Ocuco.Application.Services.csproj.CoreCompileInputs.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\obj\Debug\netcoreapp2.1\Ocuco.Application.Services.AssemblyInfoInputs.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\obj\Debug\netcoreapp2.1\Ocuco.Application.Services.AssemblyInfo.cs
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\obj\Debug\netcoreapp2.1\Ocuco.Application.Services.csproj.CopyComplete
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\obj\Debug\netcoreapp2.1\Ocuco.Application.Services.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Application\Ocuco.Application.Services\obj\Debug\netcoreapp2.1\Ocuco.Application.Services.pdb

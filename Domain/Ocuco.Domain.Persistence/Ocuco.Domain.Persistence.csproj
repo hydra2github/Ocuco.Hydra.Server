@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataModel\Ocuco.DataModel.Catalog\Ocuco.DataModel.Catalog.csproj" />
+    <ProjectReference Include="..\..\DataModel\Ocuco.DataModel.Hydradb\Ocuco.DataModel.Hydradb.csproj" />
+  </ItemGroup>
+
+</Project>

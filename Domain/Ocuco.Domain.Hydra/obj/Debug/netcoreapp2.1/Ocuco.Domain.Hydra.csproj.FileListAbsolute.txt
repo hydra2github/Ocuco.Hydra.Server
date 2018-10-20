@@ -1,0 +1,8 @@
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Hydra\bin\Debug\netcoreapp2.1\Ocuco.Domain.Hydra.deps.json
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Hydra\bin\Debug\netcoreapp2.1\Ocuco.Domain.Hydra.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Hydra\bin\Debug\netcoreapp2.1\Ocuco.Domain.Hydra.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Hydra\obj\Debug\netcoreapp2.1\Ocuco.Domain.Hydra.csproj.CoreCompileInputs.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Hydra\obj\Debug\netcoreapp2.1\Ocuco.Domain.Hydra.AssemblyInfoInputs.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Hydra\obj\Debug\netcoreapp2.1\Ocuco.Domain.Hydra.AssemblyInfo.cs
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Hydra\obj\Debug\netcoreapp2.1\Ocuco.Domain.Hydra.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Hydra\obj\Debug\netcoreapp2.1\Ocuco.Domain.Hydra.pdb

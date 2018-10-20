@@ -1,0 +1,186 @@
+﻿@model RxoCheckFrameViewModel
+@{
+    ViewBag.Title = "Luxottica RXO CheckFrame";
+}
+
+<div class="col-md-6 offset-md-3">
+
+    <!--<div class="card card-body bg-light">-->
+
+    <form method="post" id="frmValidateFrame">
+
+        <div class="card">
+
+            <div class="card-header" style="background-color: #ffffff;">
+                <h5 class="card-title">Validate Luxottica Frame</h5>
+
+                <!--<div asp-validation-summary="All"></div>-->
+                <div asp-validation-summary="ModelOnly"></div>
+
+                <div class="form-group">
+                    <label asp-for="DoorNr">Door Number:</label>
+                    <input asp-for="DoorNr" class="form-control" type="text" id="DOOR_NUMBER" />
+                    <span asp-validation-for="DoorNr" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="FrameUpc">FrameUpc:</label>
+                    <input type="text" asp-for="FrameUpc" class="form-control" type="text" id="FRAME_UPC" />
+                    <span asp-validation-for="FrameUpc" class="text-danger"></span>
+                </div>
+
+            </div>
+
+            <div class="card-body" style="background-color: #ffffff;">
+
+                <label for="DOOR_NUMBER" class="control-label">Sample data for Door number</label>
+
+                <div class="col-xs-12 input-group DOOR_NUMBER">
+                    <div class="btn-group btn-group-justified" role="group" aria-label="DoorNumber">
+                        <button type="button" class="btn btn-primary defaultvalue" value="">Any value</button>
+                        <button type="button" class="btn btn-primary" value="0001026660">0001026660</button>
+                        <button type="button" class="btn btn-primary" value="0001027218">0001027218</button>
+                    </div>
+                </div>
+
+                <label for="FRAME_UPC" class="col-xs-3 control-label">Sample data for UPC</label>
+
+                <div class="col-xs-12 input-group FRAME_UPC">
+                    <div class="btn-group btn-group-justified" role="group" aria-label="FrameUpc">
+                        <button type="button" class="btn btn-primary defaultvalue" value="">Any value</button>
+                        <button type="button" class="btn btn-primary" value="805289270102">805289270102</button>
+                        <button type="button" class="btn btn-primary" value="805289183082">805289183082</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-footer" style="background-color: #ffffff;">
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg" id="ShowBusyIndicator"><i class="fa fa-cogs"></i> Check Frame</button>
+                </div>
+
+                @if (ViewBag.UserMessage != null)
+                {
+                    @if (ViewBag.UserMessage.ErrorCode != 0)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            Luxottica RXO CheckFrame WS Error!
+                            <br />
+                            Error Code : @ViewBag.UserMessage.ErrorCode
+                            <br />
+                            Error Description : @ViewBag.UserMessage.ErrorDescription
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-success" role="alert">
+                            Luxottica RXO CheckFrame Ok, Frame is validated!
+                            <br />
+                            Error Code : @ViewBag.UserMessage.ErrorCode
+                            <br />
+                            Error Description : @ViewBag.UserMessage.ErrorDescription
+                        </div>
+                    }
+                }
+            </div>
+
+        </div>
+    </form>
+</div>
+
+
+
+
+<!---------------------------------------------
+  --  Modal throbber (Spinning wheel)
+  --------------------------------------------->
+
+<div id="pleaseWaitDialog" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-body">
+            <img src="~/imgapp/WaitingSpinner.06.gif" class="img-responsive">
+        </div>
+        <div class="modal-footer">
+            <h1>Contacting Luxottica Web Services...</h1>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //debugger;
+
+            BtnGroup('DOOR_NUMBER');
+            BtnGroup('FRAME_UPC');
+
+            function BtnGroup(divid) {
+                $('.' + divid + ' button').first().attr("aria-pressed", "true");
+                $('.' + divid + ' button').first().addClass("active");
+                $('#' + divid).attr('value', $('.' + divid + ' button.active').val());
+                $('.' + divid + ' button').click(function () {
+                    $('.' + divid + ' button').attr("aria-pressed", "false");
+                    $('.' + divid + ' button').removeClass("active");
+                    $(this).attr("aria-pressed", "true");
+                    $(this).addClass("active");
+                    $('#' + divid).attr('value', $('.' + divid + ' button.active').val());
+                });
+            }
+
+            var $form = $("#frmValidateFrame");
+            var $submitbutton = $("#ShowBusyIndicator");
+
+            $form.on("blur", "input", () => {
+                if ($form.valid()) {
+                    $submitbutton.removeAttr("disabled");
+                } else {
+                    $submitbutton.attr("disabled", "disabled");
+                }
+            });
+
+            $('#ShowBusyIndicator').click(function () {
+
+                var url = $(this).attr("action");
+                var formData = $(this).serialize();
+
+                //debugger;
+
+                if ($form.valid()) {
+                    // show modal
+                    $("#pleaseWaitDialog").modal();
+                } else {                    
+                    return;
+                }
+
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    //data: $("#frmValidateFrame").serialize()
+                    data: formData
+                }).done(function (data) {
+                    //alert('done!');
+                    $("#pleaseWaitDialog").modal('hide');
+                }).fail(function (jqXHR, textStatus) {
+                    //alert('fail!');
+                    //setTimeout('', 2000);
+                    $("#pleaseWaitDialog").modal('hide');
+                });
+
+                
+              
+            });
+
+
+           
+
+        });
+    </script>
+}

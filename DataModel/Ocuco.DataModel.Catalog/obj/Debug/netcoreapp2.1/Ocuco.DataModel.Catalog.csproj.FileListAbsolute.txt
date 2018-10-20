@@ -1,0 +1,10 @@
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.deps.json
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.runtimeconfig.json
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.runtimeconfig.dev.json
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\obj\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.csproj.CoreCompileInputs.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\obj\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.AssemblyInfoInputs.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\obj\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.AssemblyInfo.cs
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\obj\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\DataModel\Ocuco.DataModel.Catalog\obj\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.pdb

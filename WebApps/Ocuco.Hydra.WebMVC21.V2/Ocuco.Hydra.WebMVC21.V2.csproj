@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.3.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.4" />
+    <PackageReference Include="OdeToCode.UseNodeModules" Version="1.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="wilx.System.Linq.Dynamic.Core" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Ocuco.Application.Services\Ocuco.Application.Services.csproj" />
+    <ProjectReference Include="..\..\DataModel\Ocuco.DataModel.Catalog\Ocuco.DataModel.Catalog.csproj" />
+    <ProjectReference Include="..\..\DataModel\Ocuco.DataModel.Hydradb\Ocuco.DataModel.Hydradb.csproj" />
+    <ProjectReference Include="..\..\Domain\Ocuco.Domain.Persistence\Ocuco.Domain.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Catalog\" />
+    <Folder Include="wwwroot\templates\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".docs\README.LuxRxoUI.txt" />
+  </ItemGroup>
+
+</Project>

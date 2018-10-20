@@ -1,0 +1,20 @@
+﻿\WebApps folder (start project)
+
+---------------------------------------
+-- Version 1.2 (current)
+---------------------------------------
+Ocuco.Hydra.WebMVC21.V2     (.NET Core 2.1)
+
+
+---------------------------------------
+-- Version 1.1
+---------------------------------------
+Ocuco.Hydra.WebMVC          (.NET Core 2.0)
+Ocuco.Hydra.WebMVC21        (.NET Core 2.1)
+Ocuco.Hydra.WebMVC21.V2     (.NET Core 2.1 + ASP.NET Core Identity)
+
+
+---------------------------------------
+-- Version 1.0
+---------------------------------------
+Ocuco.Hydra.WebMVC          (.NET Core 2.0)

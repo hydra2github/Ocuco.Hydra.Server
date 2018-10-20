@@ -1,0 +1,14 @@
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\bin\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.deps.json
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\bin\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\bin\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Hydradb.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Catalog.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\bin\Debug\netcoreapp2.1\Ocuco.DataModel.Hydradb.pdb
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\obj\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.csprojAssemblyReference.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\obj\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.csproj.CoreCompileInputs.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\obj\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.AssemblyInfoInputs.cache
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\obj\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.AssemblyInfo.cs
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\obj\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.csproj.CopyComplete
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\obj\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.dll
+C:\OCUCO\OCUCOHUB\Ocuco.Hydra\Domain\Ocuco.Domain.Persistence\obj\Debug\netcoreapp2.1\Ocuco.Domain.Persistence.pdb

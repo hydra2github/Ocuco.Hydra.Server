@@ -1,0 +1,1 @@
+﻿Index.cshtml  :  https://bootsnipp.com/snippets/Q0ppE
