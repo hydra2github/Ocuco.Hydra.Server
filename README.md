@@ -1,93 +1,95 @@
-﻿Ocuco.Hydra.WebMVC          (.NET Core 2.0)
-Ocuco.Hydra.WebMVC21        (.NET Core 2.1)
-Ocuco.Hydra.WebMVC21.V2     (.NET Core 2.1 + ASP.NET Core Identity)
+﻿![Ocuco.Hydra.Prototype logo](https://github.com/hydra2github/Ocuco.Hydra.Images/blob/master/Logos.and.images/Hydra.Hub.for.Git.backend.png)
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://github.com/hydra2github)
+
+[![Release](https://img.shields.io/badge/Version-1.2-green.svg)](https://github.com/hydra2github)
+[![Platform](https://img.shields.io/badge/platform-win--64-lightgrey.svg)](https://github.com/hydra2github)
+
+# Ocuco.Hydra.Prototype
+
+Ocuco.Hydra.Prototype, Hydra.Hub Prototype presented at steering meeting 10-OCT-2018
+<br>
+Contains .NET solution : Ocuco.Hydra.sln Version 1.2
+
+<br>
+
+<p align="center">
+  <img alt="anigif" src="https://github.com/hydra2github/Ocuco.Hydra.Images/blob/master/AnimatedGifs/Ocuco.Hydra.Prototype.Video01.gif">
+</p>
 
 
+Features
+========
+* Landing page
+* Catalogue APIs
+* Luxottica RXO (Bludata) APIs
+* Luxottica RXO (Bludata) Audit APIs
+* Full RXO console
 
-# R-D-HydraServer-V1.0
-
-Ocuco.Hydra V1.1.sln
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-### Prerequisites
 
-What things you need to install the software and how to install them
+### Requirements
 
-```
-Give examples
-```
+* Windows
+* Git
+* Web browser
+* Visual Studio 2017
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+Clone the Git repository 
 
 ```
-Give the example
+git clone https://github.com/hydra2github/Ocuco.Hydra.Prototype.git
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+Open the solution and restore packages
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [.NET Core 2.1](https://github.com/dotnet/core/) - The web framework used
+* [Bootstrap 4.0](https://getbootstrap.com/) - Layout
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Release History
 
-## Versioning
+.NET Core/ASP.NET Core Web Application progression. 
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+> ## v1.3
+> 
+> - Project structure
+>     * Ocuco.Hydra.WebMVC21.V2 - Consolidate base code
+
+> ## v1.2
+> 
+> - Project structure
+>     * Ocuco.Hydra.WebMVC21.V2 - Completed prototype
+> - Removed
+>     * Ocuco.Hydra.WebMVC - (.NET Core 2.0)
+>     * Ocuco.Hydra.WebMVC21 - (.NET Core 2.1)
+
+> ## v1.1
+> 
+> - Project structure
+>     * Ocuco.Hydra.WebMVC - (.NET Core 2.0)
+>     * Ocuco.Hydra.WebMVC21 - (.NET Core 2.1)
+>     * Ocuco.Hydra.WebMVC21.V2 - (.NET Core 2.1 + ASP.NET Core Identity)
+
+> ## v1.0
+> 
+> - Created
+>     * Ocuco.Hydra.WebMVC - (.NET Core 2.0)
+
+> Note: Based on a PluralSight course : Building a Web App with ASP.NET Core, MVC, Entity Framework Core, Bootstrap, and Angular by Shawn Wildermuth
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* **Daniel Tassi** - *Initial work*
+* **Alessandro Mazzocchi** - *PM*
+* **Angelo Furlotti** - *Catalogue model*

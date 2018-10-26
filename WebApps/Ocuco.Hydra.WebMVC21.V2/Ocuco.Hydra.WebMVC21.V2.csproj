@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Application\Ocuco.Application.Services\Ocuco.Application.Services.csproj" />
     <ProjectReference Include="..\..\DataModel\Ocuco.DataModel.Catalog\Ocuco.DataModel.Catalog.csproj" />
+    <ProjectReference Include="..\..\DataModel\Ocuco.DataModel.Hydradbsecurity\Ocuco.DataModel.Hydradbsecurity.csproj" />
     <ProjectReference Include="..\..\DataModel\Ocuco.DataModel.Hydradb\Ocuco.DataModel.Hydradb.csproj" />
     <ProjectReference Include="..\..\Domain\Ocuco.Domain.Persistence\Ocuco.Domain.Persistence.csproj" />
   </ItemGroup>

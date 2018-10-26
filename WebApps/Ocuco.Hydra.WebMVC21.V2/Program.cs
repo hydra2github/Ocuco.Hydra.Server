@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Ocuco.DataModel.Hydradb.SeedDB;
+using Ocuco.DataModel.Hydradbsecurity.SeedDB;
 using Ocuco.Hydra.WebMVC21.V2.Data;
 
 namespace Ocuco.Hydra.WebMVC21.V2
@@ -26,22 +27,26 @@ namespace Ocuco.Hydra.WebMVC21.V2
             // .NET Core 2.1
             //CreateWebHostBuilder(args).Build().Run();
             var host = CreateWebHostBuilder(args).Build();
-            RunSeeding(host);
+
+            RunDbSeeders(host);
+
             host.Run();
         }
 
 
-        private static void RunSeeding(IWebHost host)
+        private static void RunDbSeeders(IWebHost host)
         {
             var scopeFactory = host.Services.GetService<IServiceScopeFactory>();
 
             using (var scope = scopeFactory.CreateScope())
             {
-                var seeder = scope.ServiceProvider.GetService<HydraSeeder>();
-                seeder.Seed();
+                var seeder1 = scope.ServiceProvider.GetService<HydraSeeder>();
+                seeder1.Seed();
+
+                var seeder2 = scope.ServiceProvider.GetService<HydradbsecuritySeeder>();
+                seeder2.SeedAsync().Wait();
             }
         }
-
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)

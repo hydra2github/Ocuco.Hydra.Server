@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Ocuco.Application.Services.OcucoHub.LuxotticaRxoAuditService;
 using Ocuco.Application.Services.OcucoHub.LuxotticaRxoService;
@@ -37,14 +38,14 @@ namespace Ocuco.Hydra.WebMVC21.V2.Controllers.MVC
         {
             return View();
         }
-
-
+        
 
         [HttpGet("CheckFrame")]
         public IActionResult CheckFrame()
         {
             return View();
         }
+
 
         [HttpPost("CheckFrame")]
         public IActionResult CheckFrame([FromForm]RxoCheckFrameViewModel model)
@@ -76,8 +77,7 @@ namespace Ocuco.Hydra.WebMVC21.V2.Controllers.MVC
                 logger.LogError($"Luxottica CheckFrame Error : {ex}");               
             }           
             return View();
-        }
-        
+        }        
 
 
         [HttpGet("CheckOrder")]
@@ -85,6 +85,7 @@ namespace Ocuco.Hydra.WebMVC21.V2.Controllers.MVC
         {
             return View();
         }
+
 
         [HttpPost("CheckOrder")]
         public IActionResult CheckOrder([FromForm]RxoCheckOrderViewModel model)
@@ -157,12 +158,12 @@ namespace Ocuco.Hydra.WebMVC21.V2.Controllers.MVC
         }
 
 
-
         [HttpGet("SendOrder")]
         public IActionResult SendOrder()
         {
             return View();
         }
+
 
         [HttpPost("SendOrder")]
         public IActionResult SendOrder([FromForm]RxoSendOrderViewModel model)
@@ -233,8 +234,8 @@ namespace Ocuco.Hydra.WebMVC21.V2.Controllers.MVC
         }
 
 
-
         [HttpGet("AuditDashboard")]
+        [Authorize]
         public IActionResult AuditDashboard()
         {
             var rxoAuditSummary = luxotticaRxoAuditSvc.GetRxoAuditSummary();
@@ -242,11 +243,13 @@ namespace Ocuco.Hydra.WebMVC21.V2.Controllers.MVC
             return View(rxoAuditSummary);
         }
 
+
         [HttpGet("AuditGrid")]
         public IActionResult AuditGrid()
         {
             return View();
         }
+
 
         public IActionResult LoadData()
         {
@@ -307,6 +310,7 @@ namespace Ocuco.Hydra.WebMVC21.V2.Controllers.MVC
             return Ok(Json("123"));
         }
         
+
         public async Task<IActionResult> AuditRecordDetail(int? id)
         {
             if (id == null)
@@ -322,9 +326,8 @@ namespace Ocuco.Hydra.WebMVC21.V2.Controllers.MVC
             //}
 
             return View(auditRecord);
-        }
+        }        
 
-        
 
         [HttpGet("About")]
         public IActionResult About()

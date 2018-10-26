@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="MobileApi\" />
+    <Compile Remove="MobileApi\**" />
+    <EmbeddedResource Remove="MobileApi\**" />
+    <None Remove="MobileApi\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="OcucoHub\LuxotticaRxoAuditService\Dtos\" />
   </ItemGroup>
 
